@@ -32,7 +32,7 @@ function App() {
     if (!validateInputs()) return;
 
     setLoading(true);
-    Axios.post("http://localhost:5000/token", { amount, phone })
+    Axios.post("https://mpesa-stk-push-reactjs.onrender.com/token", { amount, phone })
       .then((res) => {
         console.log(res);
         setStatus("success");
