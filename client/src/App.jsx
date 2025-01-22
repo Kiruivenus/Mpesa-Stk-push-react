@@ -49,7 +49,7 @@ function App() {
       {/* Payment Form */}
       <div className="w-full max-w-md bg-white shadow-lg rounded-xl p-6">
         <h1 className="text-3xl font-semibold text-center text-green-600 mb-6">
-          Pay with <span className="font-bold">Mpesa</span>
+          Pay With <span className="font-bold">Mpesa</span>
         </h1>
         <form className="flex flex-col space-y-4" onSubmit={payHandler}>
           {/* Phone Input */}
