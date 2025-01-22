@@ -32,7 +32,7 @@ function App() {
     if (!validateInputs()) return;
 
     setLoading(true);
-    Axios.post("https://mpesa-stk-push-reactjs.onrender.com/token", { amount, phone })
+    Axios.post(`${import.meta.env.VITE_API_URL}/token`, { amount, phone })
       .then((res) => {
         console.log(res);
         setStatus("success");
